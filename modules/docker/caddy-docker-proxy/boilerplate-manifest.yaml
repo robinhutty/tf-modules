@@ -1,0 +1,72 @@
+Variables:
+    Authors:
+        - display_name: Robin Hutty
+          email: robin@allgoodbits.org
+          forge-id: robinhutty
+    CopyrightInfo: Copyright (C) 2026 Duncan (Robin) Hutty
+    Forge:
+        hostname: github.com
+        org: robinhutty
+        project: tf-modules
+    Forge.hostname: github.com
+    HCLCommand: tofu
+    License:
+        spdxid: BSD-3-Clause
+        spdxurl: https://spdx.org/licenses/BSD-3-Clause.html
+    ModuleName: caddy-docker-proxy
+    ModuleSource: https://github.com/robinhutty/tf-modules/modules/caddy-docker-proxy
+    Providers:
+        - name: aws
+          source: hashicorp/aws
+          version: ~> 6.0
+        - name: "null"
+          source: hashicorp/null
+          version: ~> 3.0
+    Terratest: true
+    TfVersion: '>= 1.6'
+SchemaVersion: https://boilerplate.gruntwork.io/schemas/manifest/v2/schema.json
+Timestamp: "2026-05-03T22:51:29Z"
+TemplateURL: ../templates/boilerplate/tf_module
+BoilerplateVersion: v0.15.0
+SourceChecksum: sha256:127440bef8a1f51c2dc0fed7f17cb8c973425ecc3d83c9d67f789797e9bb279b
+OutputDir: ../tf-modules/modules/docker/caddy-docker-proxy
+Dependencies: []
+Files:
+    - Path: .gitattributes
+      Checksum: sha256:a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9
+    - Path: .gitignore
+      Checksum: sha256:f6206d9f4cc681ae6154c63014f0c73dadbcf165ee47d9b0eb2a5316fa3c7b2d
+    - Path: .markdownlint.yml
+      Checksum: sha256:c8edd97ec215ce00e858f11fe720f7f9eefddd0bb365a87783923b2df68cc026
+    - Path: .opentofu-version
+      Checksum: sha256:abbc1dfa005442cde25131e583640f0259dfabc4fd0b8c43690f6e5ebb872609
+    - Path: .pre-commit-config.yaml
+      Checksum: sha256:c2889763aa7600a381e45cd4fbcf8e3946580978402d1bdf8062b095927d384d
+    - Path: .terraform-docs.yml
+      Checksum: sha256:e178231a7b65ac931dbb0303b8d903ad60094fac185759da60482c30d3aa4cde
+    - Path: .tflint.hcl
+      Checksum: sha256:1b2e4c6013f64f8fbc2200e5033ea4ea8e03b25d27771cdd8f819971332ae1bc
+    - Path: CODEOWNERS
+      Checksum: sha256:34fc4543a28a564a8dd3857843b612ac92fb9db5f3c2d396e2804a7f65fc34dc
+    - Path: LICENSE
+      Checksum: sha256:f8bfd82f730430b0c46158449de67e260a2105d6ce775f938517f467070774ff
+    - Path: README.md
+      Checksum: sha256:ff0c935f712367bc384cfda4f125d0958ce216bbfb3da32f041f4f36b58e8a91
+    - Path: main.tf
+      Checksum: sha256:17f88a87bb34649fa4a4cb196836dc67cde0d58e98cd12e172417175ef42a3e4
+    - Path: outputs.tf
+      Checksum: sha256:da3371f9d986b4e2877e96fd28820e78c233711b8eec7b7c2b2171546407152f
+    - Path: test/example_test.go
+      Checksum: sha256:bf29dc6d4570bc04b2a92416b9806636996e8fa2f85691b2e228196a611d2a65
+    - Path: test/fixtures/main.tf
+      Checksum: sha256:be30bda1f3dedea763b09767e4b0b54ace5ee4ac0b4483d13a0a07baf478e449
+    - Path: test/fixtures/outputs.tf
+      Checksum: sha256:7ce57cfd382db45626ea099d59cbceee6301f15b04f59bc2d01dc74e1cab5e90
+    - Path: test/fixtures/variables.tf
+      Checksum: sha256:0d9a209bd7e5d2ed52c6deaf47f00891c6de22f0f5b87123779e9c6089dfc476
+    - Path: test/test_varfile.tfvars
+      Checksum: sha256:16a3d4f0f0d91c05d67ea2a22e53633878ed74d9a1296f722b7b640b94afe80a
+    - Path: variables.tf
+      Checksum: sha256:e658bcaa83e8d8371f653c60f7aae631655077defc581572c3455ce9837d9ad4
+    - Path: versions.tf
+      Checksum: sha256:7b9e310b3b135a64bfce50a6fb6fcdb1d1b645d1d9d4eea201e4e3bdc3f291d1

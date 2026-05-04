@@ -67,8 +67,13 @@ boilerplate --template-url ../templates/boilerplate/tf_module \
   --non-interactive --var ModuleName=<new-module-name>
 ```
 
-### How to develop the boilerplate template for tf_modules
+### How to develop the boilerplate template for tf-modules
 
 Want to contribute to improving the template for tf modules?
 
 See the [templates/boilerplate README](../templates/boilerplate/README.md)
+
+## Metadata
+
+1. Canonical Source: https://github.com/robinhutty/tf-modules
+2. Unless otherwise noted on a per-module basis, these TF modules are licensed as [License](./LICENSE): [BSD-3-Clause](https://spdx.org/licenses/BSD-3-Clause.html)

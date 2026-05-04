@@ -1,0 +1,67 @@
+.DS_Store
+.localized
+__MACOSX/
+
+.idea
+.vscode
+/.vs/*
+/.vs
+
+# Swap
+[._]*.s[a-v][a-z]
+# comment out the next line if you don't need vector files
+!*.svg
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+*~
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
+
+# Exclude likely/possible filename pattern(s) for files with sensitive/secret data.
+# and provide an exception mechanism
+**/*secret*
+!.secretlintignore
+
+# Ignore megalinter reports and Vale styles
+megalinter-reports
+.vale-styles
+
+# env file
+.env
+
+# Generated files
+**/*.out
+
+boilerplate-manifest.yaml
+
+# log files
+crash*.log
+*.log
+
+# binary
+**/*.exe
+**/*.so
+
+# database
+*.sqlite
+
+# cache
+**/cache/
+
+## Python
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[codz]
+.venv
+venv

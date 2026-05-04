@@ -1,0 +1,46 @@
+# .editorconfig helps maintain consistent coding style: https://editorconfig.org
+# Especially valuable for projects with multiple developers and/or where code is written using multiple editors/OSen/platforms
+
+# Most common editors/IDEs support EditorConfig _without_ a plugin, including vim/neovim, emacs, Visual Studio, XCode, GitHub, GitLab, Sourcehut, and more.
+# Common exceptions that support EditorConfig _with_ a plugin include: VSCode/VSCodium, Notepad++, Eclipse
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+max_line_length = 140
+
+# Terragrunt, Terraform, etc.
+[*.{tf,tfvars,tftpl,hcl}]
+indent_style = space
+indent_size = 2
+
+[*.json]
+insert_final_newline = false
+
+# Extra spacing for languages that are whitespace-delimited
+[*.{py,yaml,yml}]
+indent_size = 4
+[*.{md,mkd,adoc}]
+indent_size = 4
+[{Makefile,**/Makefile,Makefile.*}]
+indent_style = tab
+tab_width = 4
+indent_size = 4
+
+########
+# More examples below
+#######
+# To exclude certain directory hierarchies, you can specify 'unset': https://spec.editorconfig.org/#supported-pairs
+; [/vendor/**]
+; charset = unset
+; end_of_line = unset
+; indent_style = unset
+; indent_size = unset
+; insert_final_newline = unset
+; trim_trailing_whitespace = unset

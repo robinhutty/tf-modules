@@ -1,0 +1,38 @@
+# From https://github.com/antonbabenko/pre-commit-terraform
+# pre-commit-terraform provides a collection of Git Hooks for Terraform and related tools and is driven by the pre-commit framework. It helps ensure that Terraform, OpenTofu, and Terragrunt configurations are kept in good shape by automatically running various checks and formatting code before committing changes to version control system.
+repos:
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: "v1.105.0" # Get the latest from: https://github.com/antonbabenko/pre-commit-terraform/releases
+    hooks:
+      - id: terraform_fmt
+      - id: terraform_tflint
+      - id: terraform_trivy
+      - id: terraform_docs
+        args:
+          - --args=--config=.terraform-docs.yml
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-illegal-windows-names
+      - id: check-case-conflict
+      - id: check-symlinks
+
+      # Git style
+      - id: no-commit-to-branch
+        args: [--branch, main]
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      # - id: check-vcs-permalinks
+      # - id: forbid-submodules
+      # - id: forbid-new-submodules
+
+      # Prevent syntax failures for certain serialization/markup formats
+      - id: check-json
+      - id: check-toml
+      - id: check-xml
+      - id: check-yaml
+        args: [ --allow-multiple-documents ]
+      - id: trailing-whitespace
+        # To preserve Markdown hard linebreaks
+        args: [--markdown-linebreak-ext=md]
